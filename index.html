@@ -1,0 +1,195 @@
+<!DOCTYPE html>    <html lang="id">    
+<head>    
+    <meta charset="UTF-8" />    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>    
+    <title>Website Kelas</title>    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css" />    
+</head>    
+<body>    
+    <div class="wrap">    
+        <header>    
+            <img src="images/Kelas Sains Header Classroom Berwarna .png" width="100%" height="auto"/>    
+            <nav>    
+                <button id="bar" class="menu-toggle" onclick="toggleMenu()">☰ Menu</button>    
+                <div id="barr" class="bar">    
+                    <ul class="navbar" id="navbar">    
+                        <li><a href="#beranda">Beranda</a></li>    
+                        <li>    
+                            <a href="#profil">Profil Jurusan</a>    
+                            <ul class="dropdown">    
+                                <li onclick="showDetails('Kondisi Dan Fasilitas Kelas')">Kelas Pemrograman Dasar</li>    
+                                <li onclick="showDetails('Kelas Desain Grafis')">Kelas Desain Grafis</li>    
+                                <li onclick="showDetails('Kelulusan')">Kelas Data Science</li>    
+                            </ul>    
+                        </li>    
+                        <li><a href="#prestasi">Prestasi</a></li>    
+                        <li><a href="#gallery">Album</a></li>    
+                        <li><a href="#tamu">Buku Tamu</a></li>    
+                    </ul>    
+                </div>    
+            </nav>    
+        </header>    
+        <main>    
+        	
+        <h2>Beranda</h2>    
+            <div id="beranda" class="containerr">    
+                
+                <p>SMK Negeri 2 Yogyakarta (STM Jetis/STM 1 Yogyakarta) beralamat di Jl. A.M. Sangaji No. 47, Yogyakarta, dengan sepuluh program keahlian, salah satunya Desain Komunikasi Visual (DKV). Paket Keahlian Multimedia, berdiri sejak 2009 dan terakreditasi A, berbagi Gedung D bersama Teknik Komputer dan Jaringan. Program ini bertujuan membekali siswa dengan keterampilan dalam media teks, grafis, animasi, audio, video, dan media interaktif.    
+Terdapat dua rombongan belajar (MM1 dan MM2) masing-masing berisi 32 siswa. Fasilitas meliputi laboratorium grafis, software, hardware, basic computer, editing, serta ruang guru, didukung perlengkapan komputer, kamera, alat animasi, videografi, dan fotografi.</p>    
+            </div><br><br><br> 
+
+   <div id="balik"> </div>
+   <h2>Profil Jurusan</h2>    
+   <div id="profil" class="containerr">    
+      
+            <ul id="class-list">    
+                <li onclick="showDetails('Kondisi Dan Fasilitas Kelas')"><a href="#class-details">Kondisi dan Fasilitas kelas</a></li>    
+                <li onclick="showDetails('Kelas Desain Grafis')"><a href="#class-details">Struktur Organisasi</a></li>    
+                <li onclick="showDetails('Kelulusan')"><a href="#class-details">Struktur Organisasi</a></li>    
+            </ul>    
+            <div id="class-details" class="hidden">    
+                <h3>Detail Kelas</h3>    
+                <p id="details-text"></p>    
+                <a href="#balik"><button onclick="hideDetails()">Tutup</button></a>
+            </div>    
+        </div><br><br><br>    
+ 
+<h2>Prestasi</h2>           	
+<div id="prestasi" class="containerr">
+  <div class="table-responsive">    
+    <div class="prestasi-table">    <div class="table-row header">    
+    <div class="table-col tahun">Tahun</div>    
+    <div class="table-col prestasi">Prestasi</div>    
+  </div>    
+
+  <div class="table-row">    
+    <div class="table-col tahun" data-label="Tahun">2012</div>    
+    <div class="table-col prestasi" data-label="Prestasi">Juara I AMICTA Kompetensi Web Sekolah tingkat nasional</div>    
+  </div>    
+
+  <div class="table-row">    
+    <div class="table-col tahun" data-label="Tahun">2012</div>    
+    <div class="table-col prestasi" data-label="Prestasi">Juara I LKS Bidang Web Design tingkat D.I. Yogyakarta</div>    
+  </div>    
+
+  <div class="table-row">    
+    <div class="table-col tahun" data-label="Tahun">2013</div>    
+    <div class="table-col prestasi" data-label="Prestasi">Juara I LKS Bidang Web Design tingkat D.I. Yogyakarta</div>    
+  </div>    
+
+  <div class="table-row">    
+    <div class="table-col tahun" data-label="Tahun">2013</div>    
+    <div class="table-col prestasi" data-label="Prestasi">Juara 2 LKS Bidang Graphic Design Technology tingkat D.I. Yogyakarta</div>    
+  </div>    
+
+  <div class="table-row">    
+    <div class="table-col tahun" data-label="Tahun">2014</div>    
+    <div class="table-col prestasi" data-label="Prestasi">Juara I LKS Bidang Animasi tingkat D.I. Yogyakarta</div>    
+  </div>    
+
+  <div class="table-row">    
+    <div class="table-col tahun" data-label="Tahun">2015</div>    
+    <div class="table-col prestasi" data-label="Prestasi">Juara I LKS Bidang Web Design tingkat D.I. Yogyakarta</div>    
+  </div>    
+
+  <div class="table-row">    
+    <div class="table-col tahun" data-label="Tahun">2015</div>    
+    <div class="table-col prestasi" data-label="Prestasi">Juara Harapan 1 LKS Bidang Graphic Design Technology tingkat D.I. Yogyakarta</div>    
+  </div>    
+
+  <div class="table-row">    
+    <div class="table-col tahun" data-label="Tahun">2015</div>    
+    <div class="table-col prestasi" data-label="Prestasi">Juara 2 LKS Bidang Animasi tingkat nasional</div>    
+  </div>    
+
+  <div class="table-row">    
+    <div class="table-col tahun" data-label="Tahun">2016</div>    
+    <div class="table-col prestasi" data-label="Prestasi">Juara 2 LKS Bidang Web Design tingkat nasional</div>    
+  </div>    
+
+</div><br><br><br>
+        	    
+        <h2>Album</h2>    
+        <div class="gallery containerr" id="gallery"> 
+
+  <div class="gallery-item">    
+    <img src="images/1.jpg" alt="Gambar 1">    
+  </div>    
+  <div class="gallery-item">    
+    <img src="images/2.jpg" alt="Gambar 2">    
+  </div>    
+  <div class="gallery-item">    
+    <img src="images/3.jpg" alt="Gambar 3">    
+  </div>    
+  <div class="gallery-item">    
+    <img src="images/4.jpg" alt="Gambar 4">    
+  </div>    
+  <div class="gallery-item">    
+    <img src="images/5.jpg" alt="Gambar 5">    
+  </div>    
+  <div class="gallery-item">    
+    <img src="images/6.jpg" alt="Gambar 6">    
+  </div>    
+  <div class="gallery-item">    
+    <img src="images/7.jpg" alt="Gambar 7">    
+  </div>    
+  <div class="gallery-item">    
+    <img src="images/8.jpg" alt="Gambar 8">    
+  </div>    
+  <div class="gallery-item">    
+    <img src="images/9.jpg" alt="Gambar 9">    
+  </div>    
+  <div class="gallery-item">    
+    <img src="images/10.jpg" alt="Gambar 10">    
+  </div>    
+  <div class="gallery-item">    
+    <img src="images/11.jpg" alt="Gambar 11">    
+  </div>    
+  <div class="gallery-item">    
+    <img src="images/12.jpg" alt="Gambar 12">    
+  </div>    
+</div><br><br><br>
+
+  </div>    
+</div><br><br><br>
+
+    <div id="tamu" class="container">    
+            <h1>Buku Tamu</h1>    
+            <form id="guestbookForm">    
+                <label for="name">Nama:</label>    
+                <input type="text" id="name" required placeholder="Masukkan nama Anda" />    
+
+                <label for="email">Email:</label>    
+                <input type="email" id="email" required placeholder="Masukkan email Anda" />    
+
+                <label for="message">Pesan:</label>    
+                <textarea id="message" required placeholder="Tulis pesan Anda"></textarea>    
+
+                <button type="submit">Kirim</button>    
+            </form>    
+        </div>    
+    </main>    
+    <footer>    
+    	<div class="map-responsive">
+  <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3953.108575002016!2d110.36744028756898!3d-7.778311102355224!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e7a58373fffffff%3A0xa4ec1ca156555926!2sSMK%20Negeri%202%20Yogyakarta!5e0!3m2!1sen!2sid!4v1745219179803!5m2!1sen!2sid" 
+  allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+</div>
+    <a href="https://www.instagram.com/smkn2yogyakarta?igsh=MWw2eWx0bGoyZGxoeg==" target="_blank">
+  <i class="fa-brands fa-instagram" style="font-size: 40px; color: black;"></i>
+</a>
+<a href="https://www.facebook.com/share/15wjF133ZG/" target="_blank">
+  <i class="fa-brands fa-facebook" style="font-size: 40px; color: black;"></i>
+</a>
+<a href="https://youtube.com/@smkn2yogyakarta?si=KgoeZOlH8RHHWJkb" target="_blank">
+  <i class="fa-brands fa-youtube" style="font-size: 40px; color: black;"></i>
+</a>
+
+        <p>&copy; 2023 Website Kelas</p>    
+    </footer>    
+</div>    
+<script src="script.js"></script>
+
+
+</body>    
+</html>  
