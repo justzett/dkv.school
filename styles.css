@@ -359,7 +359,7 @@ gap: 8px;
 
 .map-responsive {
   position: relative;
-  width: 100%;
+  width: 30%;
   padding-bottom: 56.25%; /* 16:9 aspect ratio */
   height: 0;
   overflow: hidden;
